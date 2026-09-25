@@ -349,6 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1902153871}
+  - component: {fileID: 1902153872}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -373,6 +374,19 @@ Transform:
   - {fileID: 1612596540482105017}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1902153872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902153870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ed9aa229999af428487a893fa7a6fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  _uiWindows: []
 --- !u!4 &1612596540482105017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8785175626670448603, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
@@ -386,9 +400,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1902153871}
     m_Modifications:
+    - target: {fileID: 42397267838741327, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 635392243610945989, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: _hideOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 635392243610945989, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: _volumeSlider
+      value: 
+      objectReference: {fileID: 5020251178372619574}
+    - target: {fileID: 635392243610945989, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: _canvasRectTransform
+      value: 
+      objectReference: {fileID: 5020251178372619573}
+    - target: {fileID: 865520308707529056, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 865520308707529056, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 865520308707529056, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246305547098024861, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329849548361449450, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479371176447629784, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5820784367433777212, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100262397897385616, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8680169758412756021, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
       propertyPath: m_Name
       value: SettingsUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8680169758412756021, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8785175626670448603, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -430,11 +496,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8062455877561236613, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+--- !u!224 &5020251178372619573 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6493267147141762145, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+  m_PrefabInstance: {fileID: 5020251178372619572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5020251178372619574 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5363617763793423309, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+  m_PrefabInstance: {fileID: 5020251178372619572}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1001 &9064684394476639864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -443,9 +526,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1902153871}
     m_Modifications:
+    - target: {fileID: 579393825241969080, guid: de87d8a66c545814682057842def842c, type: 3}
+      propertyPath: _hideOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 579393825241969080, guid: de87d8a66c545814682057842def842c, type: 3}
+      propertyPath: _canvasRectTransform
+      value: 
+      objectReference: {fileID: 9064684394476639865}
     - target: {fileID: 4112744123001452853, guid: de87d8a66c545814682057842def842c, type: 3}
       propertyPath: m_Name
       value: PopupUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112744123001452853, guid: de87d8a66c545814682057842def842c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4535779777977998356, guid: de87d8a66c545814682057842def842c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -580,6 +675,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de87d8a66c545814682057842def842c, type: 3}
+--- !u!224 &9064684394476639865 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1844551665535798413, guid: de87d8a66c545814682057842def842c, type: 3}
+  m_PrefabInstance: {fileID: 9064684394476639864}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
