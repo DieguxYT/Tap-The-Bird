@@ -386,7 +386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ed9aa229999af428487a893fa7a6fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  _uiWindows: []
+  _uiWindows:
+  - {fileID: 9064684394476639866}
+  - {fileID: 5020251178372619575}
 --- !u!4 &1612596540482105017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8785175626670448603, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
@@ -518,6 +520,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+--- !u!114 &5020251178372619575 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 635392243610945989, guid: d7a88bed3f7e0864c8e01e1c239a872f, type: 3}
+  m_PrefabInstance: {fileID: 5020251178372619572}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a154f0fd987164aa43f4c1eb52113c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsUI
 --- !u!1001 &9064684394476639864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -680,6 +693,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1844551665535798413, guid: de87d8a66c545814682057842def842c, type: 3}
   m_PrefabInstance: {fileID: 9064684394476639864}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &9064684394476639866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 579393825241969080, guid: de87d8a66c545814682057842def842c, type: 3}
+  m_PrefabInstance: {fileID: 9064684394476639864}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3754134d0a11f4b4a9e847c2ae51d3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PopupUI
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
