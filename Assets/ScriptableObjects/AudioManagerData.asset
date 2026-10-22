@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f49d01c5d1d75488b2fb57bec41665, type: 3}
+  m_Name: AudioManagerData
+  m_EditorClassIdentifier: Assembly-CSharp::Dino.Utility.Audio.AudioManagerData
+  _sfxAudioMixerGroup: {fileID: -2448820644647976091, guid: 7eff2435256b1e345ad00e55acfbe5a0, type: 2}
+  _sfxVolumeParameterName: SFXVolume
+  _musicAudioMixerGroup: {fileID: -7291984965509744743, guid: 7eff2435256b1e345ad00e55acfbe5a0, type: 2}
+  _musicVolumeParameterName: MusicVolume
+  _ambienceAudioMixerGroup: {fileID: 1605474013600253825, guid: 7eff2435256b1e345ad00e55acfbe5a0, type: 2}
+  _ambienceVolumeParameterName: AmbienceVolume
+  audioData:
+  - name: click
+    clip: {fileID: 8300000, guid: 5a7ed32fc7573364889da1808d25dae8, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    audioType: 1
+  - name: backgroundMusic
+    clip: {fileID: 8300000, guid: 4718c121d3f30264cae788b060c76022, type: 3}
+    loop: 1
+    volume: 1
+    pitch: 1
+    audioType: 0
