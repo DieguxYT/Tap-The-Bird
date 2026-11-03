@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Interfaz")]
     public UIManager UIManager;
+    [Header("Interfaz de Gameplay")]
+    public GameObject gameplayUI;
 
     public string menuID = "MenuUI";
     public string pausaID = "PausaUI";
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
     public void MostrarMenu()
     {
         Time.timeScale = 0f;
+        gameplayUI.SetActive(false);
 
         player.SetActive(false);
         generadorObstaculos.SetActive(false);
@@ -92,6 +95,7 @@ public class GameManager : MonoBehaviour
         generadorObstaculos.SetActive(true);
 
         OcultarPantallas();
+        gameplayUI.SetActive(true);
     }
 
     public void Perder()
@@ -102,6 +106,8 @@ public class GameManager : MonoBehaviour
         {
             Puntuacion.Instance.ActualizarTextos();
         }
+
+        gameplayUI.SetActive(false);
 
         UIManager.ShowWindow(derrotaID);
     }
@@ -147,6 +153,20 @@ public class GameManager : MonoBehaviour
         UIManager.HideWindow("SettingsUI");
         UIManager.ShowWindow(menuID);
     }
+
+
+    public void AbrirCreditos()
+    {
+        UIManager.HideWindow(menuID);
+        UIManager.ShowWindow("CreditosUI");
+    }
+
+    public void CerrarCreditos()
+    {
+        UIManager.HideWindow("CreditosUI");
+        UIManager.ShowWindow(menuID);
+    }
+
 
 }
 
