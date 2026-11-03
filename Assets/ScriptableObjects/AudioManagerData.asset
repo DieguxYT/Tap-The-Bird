@@ -19,15 +19,27 @@ MonoBehaviour:
   _ambienceAudioMixerGroup: {fileID: 1605474013600253825, guid: 7eff2435256b1e345ad00e55acfbe5a0, type: 2}
   _ambienceVolumeParameterName: AmbienceVolume
   audioData:
-  - name: click
-    clip: {fileID: 8300000, guid: 5a7ed32fc7573364889da1808d25dae8, type: 3}
-    loop: 0
-    volume: 1
-    pitch: 1
-    audioType: 1
-  - name: backgroundMusic
-    clip: {fileID: 8300000, guid: 4718c121d3f30264cae788b060c76022, type: 3}
+  - name: MusicaFondo
+    clip: {fileID: 8300000, guid: 6be9160efb9dadd498a0262f910d24c5, type: 3}
     loop: 1
     volume: 1
     pitch: 1
     audioType: 0
+  - name: Vuelo
+    clip: {fileID: 8300000, guid: 0853121268c8e994d9ba205c0635c2e0, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    audioType: 1
+  - name: Punto
+    clip: {fileID: 8300000, guid: cc5a501b71e042741992bab7631b439a, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    audioType: 1
+  - name: Derrota
+    clip: {fileID: 8300000, guid: 7115e7b8715b1c94981d574a24ac806e, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    audioType: 1

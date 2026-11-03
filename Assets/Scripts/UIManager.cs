@@ -46,21 +46,21 @@ public class UIManager : MonoBehaviour
     /// Muestra la ventana de UI con el nombre especificado.
     /// </summary>
     /// <param name="windowName"></param>
-    public void ShowWindow(string windowName)
+
+    public void ShowWindow(string id)
     {
-        foreach (var window in _uiWindows)
+        foreach (UIWindow ventana in UIWindows)
         {
-            if (window.Id == windowName)
+            if (ventana != null && ventana.Id == id)
             {
-                Debug.Log($"Showing window: {windowName}");
-                window.Show();
-                break;
-            }
-            else
-            {
-                Debug.LogError("Window not found: " + windowName);
+                ventana.Show();
+
+                Debug.Log("Showing window: " + id);
+                return;
             }
         }
+
+        Debug.LogError("Window not found: " + id);
     }
 
     /// <summary>

@@ -104,19 +104,30 @@ namespace Dino.Utility.Audio
             _musicAudioData = _audioManagerData.audioData.FindAll(x => x.audioType == AudioType.Music);
         }
 
-        private void SetAudioInMixerGroup(AudioSource audioSource, AudioType audioType)
+
+        private void SetAudioInMixerGroup(
+            AudioSource audioSource,
+            AudioType audioType)
         {
             switch (audioType)
             {
                 case AudioType.Music:
+                    audioSource.outputAudioMixerGroup =
+                        _audioManagerData.MusicAudioMixerGroup;
                     break;
+
                 case AudioType.SFX:
-                    audioSource.outputAudioMixerGroup = _audioManagerData.SfxAudioMixerGroup;
+                    audioSource.outputAudioMixerGroup =
+                        _audioManagerData.SfxAudioMixerGroup;
                     break;
+
                 case AudioType.Ambience:
+                    audioSource.outputAudioMixerGroup =
+                        _audioManagerData.AmbienceAudioMixerGroup;
                     break;
             }
         }
+
 
         #endregion
 

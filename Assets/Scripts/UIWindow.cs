@@ -1,15 +1,12 @@
+
 using DG.Tweening;
-using NaughtyAttributes;
 using UnityEngine;
 
-/// <summary>
-/// Clase base para todas las ventanas de UI en la escena.
-/// Proporciona funcionalidad para mostrar y ocultar ventanas con animaciones.
-/// </summary>
 public class UIWindow : MonoBehaviour
 {
     [Header("Data")]
     [SerializeField] private string _id;
+
     [Header("UI Settings")]
     [SerializeField] private RectTransform _canvasRectTransform;
     [SerializeField] private CanvasGroup _canvasGroup;
@@ -26,17 +23,6 @@ public class UIWindow : MonoBehaviour
     public RectTransform CanvasRectTransform => _canvasRectTransform;
     public string Id => _id;
 
-    private bool _isShowing = false;
-
-    void Start()
-    {
-        //Initialize corre en el Start para asegurarse de que la ventana se inicialice correctamente al inicio del juego.
-        Initialize();
-    }
-
-    /// <summary>
-    /// Inicializa la ventana de UI. Si _hideOnStart es verdadero, la ventana se ocultará al inicio.
-    /// </summary>
     public virtual void Initialize()
     {
         if (_hideOnStart)
@@ -44,58 +30,57 @@ public class UIWindow : MonoBehaviour
             Hide(true);
         }
     }
-    /// <summary>
-    /// Muestra la ventana de UI.
-    /// </summary>
-    /// <param name="instant">Si es true, la ventana se mostrará instantáneamente.</param>
+
+    void Start()
+    {
+        Initialize();
+    }
+
     public virtual void Show(bool instant = false)
     {
-        // Si "instant" es verdadero, se activa el GameObject del Canvas y se muestra la ventana sin animación.
+        RectTransform rectTransform =
+            _canvasGroup.GetComponent<RectTransform>();
+
+        // Detener animaciones anteriores
+        rectTransform.DOKill();
+
+        _canvasRectTransform.gameObject.SetActive(true);
+
         if (instant)
         {
-            // Activar el GameObject del Canvas y mostrar la ventana sin animación
-            _canvasRectTransform.gameObject.SetActive(true);
+            rectTransform.localScale = Vector3.one;
         }
-        // Si "instant" es falso, se activa el GameObject del Canvas y se muestra la ventana con animación.
         else
         {
-            _isShowing = true;
-            _canvasGroup.transform.localScale = Vector3.zero;
-            _canvasRectTransform.gameObject.SetActive(true);
-            RectTransform rectTransform = _canvasGroup.GetComponent<RectTransform>();
-            rectTransform.DOScale(Vector3.one, showDuration).SetEase(showEase).OnComplete(() =>
-            {
-                _isShowing = false;
-            });
+            rectTransform.localScale = Vector3.zero;
+
+            rectTransform.DOScale(Vector3.one, showDuration)
+                .SetEase(showEase)
+                .SetUpdate(true);
         }
     }
 
-    /// <summary>
-    /// Oculta la ventana de UI.
-    /// </summary>
-    /// <param name="instant"> Si es true, la ventana se ocultará instantáneamente.</param>
     public virtual void Hide(bool instant = false)
     {
-        // Si "instant" es verdadero, se desactiva el GameObject del Canvas y se oculta la ventana sin animación.
+        RectTransform rectTransform =
+            _canvasGroup.GetComponent<RectTransform>();
+
+        // Detener animaciones anteriores
+        rectTransform.DOKill();
+
         if (instant)
         {
             _canvasRectTransform.gameObject.SetActive(false);
         }
-        // Si "instant" es falso, se oculta la ventana con animación y luego se desactiva el GameObject del Canvas.
         else
         {
-            if (_isShowing)
-            {
-                Debug.Log("Window is currently showing. Cannot hide until the show animation is complete.");
-                return;
-            }
-            RectTransform rectTransform = _canvasGroup.GetComponent<RectTransform>();
-            rectTransform.DOScale(Vector3.zero, hideDuration).SetEase(hideEase).OnComplete(() =>
-            {
-                _canvasRectTransform.gameObject.SetActive(false);
-            });
+            rectTransform.DOScale(Vector3.zero, hideDuration)
+                .SetEase(hideEase)
+                .SetUpdate(true)
+                .OnComplete(() =>
+                {
+                    _canvasRectTransform.gameObject.SetActive(false);
+                });
         }
     }
-
-
 }
