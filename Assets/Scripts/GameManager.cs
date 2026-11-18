@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public string derrotaID = "DerrotaUI";
 
     private Vector3 posicionInicial;
+    public bool PartidaActiva { get; private set; }
 
     void Awake()
     {
@@ -34,6 +35,9 @@ public class GameManager : MonoBehaviour
 
     public void MostrarMenu()
     {
+        PartidaActiva = false;
+        MetricasPartida.Instance?.Guardar();
+        MetricasPartida.Instance?.ActualizarTextos();
         Time.timeScale = 0f;
         gameplayUI.SetActive(false);
 
@@ -58,18 +62,23 @@ public class GameManager : MonoBehaviour
 
     public void Pausar()
     {
+        PartidaActiva = false;
+        MetricasPartida.Instance?.Guardar();
         Time.timeScale = 0f;
         UIManager.ShowWindow(pausaID);
     }
 
     public void Continuar()
     {
+        PartidaActiva = true;
         UIManager.HideWindow(pausaID);
         Time.timeScale = 1f;
     }
 
     public void ReiniciarPartida()
     {
+        PartidaActiva = false;
+        MetricasPartida.Instance?.ReiniciarPartida();
         Time.timeScale = 1f;
 
         if (SonidosJuego.Instance != null)
@@ -96,10 +105,14 @@ public class GameManager : MonoBehaviour
 
         OcultarPantallas();
         gameplayUI.SetActive(true);
+        PartidaActiva = true;
     }
 
     public void Perder()
     {
+        PartidaActiva = false;
+        MetricasPartida.Instance?.Guardar();
+        MetricasPartida.Instance?.ActualizarTextos();
         Time.timeScale = 0f;
 
         if (Puntuacion.Instance != null)
@@ -114,6 +127,11 @@ public class GameManager : MonoBehaviour
 
     void EliminarObstaculos()
     {
+        foreach (Moneda moneda in FindObjectsByType<Moneda>(FindObjectsSortMode.None))
+        {
+            moneda.gameObject.SetActive(false);
+            Destroy(moneda.gameObject);
+        }
         Obstaculo[] obstaculos =
             FindObjectsByType<Obstaculo>(
                 FindObjectsSortMode.None);

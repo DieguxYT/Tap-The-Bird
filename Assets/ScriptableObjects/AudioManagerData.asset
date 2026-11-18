@@ -43,3 +43,9 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     audioType: 1
+  - name: Moneda
+    clip: {fileID: 8300000, guid: 7864b9f9ba2f3b544b2985f43f32c005, type: 3}
+    loop: 0
+    volume: 0.65
+    pitch: 1
+    audioType: 1
