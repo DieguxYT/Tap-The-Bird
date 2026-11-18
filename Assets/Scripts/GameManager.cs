@@ -20,6 +20,13 @@ public class GameManager : MonoBehaviour
 
     private Vector3 posicionInicial;
     public bool PartidaActiva { get; private set; }
+    private Coroutine derrotaPendiente;
+
+    void CancelarDerrota()
+    {
+        if (derrotaPendiente != null) StopCoroutine(derrotaPendiente);
+        derrotaPendiente = null;
+    }
 
     void Awake()
     {
@@ -35,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void MostrarMenu()
     {
+        CancelarDerrota();
         PartidaActiva = false;
         MetricasPartida.Instance?.Guardar();
         MetricasPartida.Instance?.ActualizarTextos();
@@ -77,6 +85,7 @@ public class GameManager : MonoBehaviour
 
     public void ReiniciarPartida()
     {
+        CancelarDerrota();
         PartidaActiva = false;
         MetricasPartida.Instance?.ReiniciarPartida();
         Time.timeScale = 1f;
@@ -122,7 +131,17 @@ public class GameManager : MonoBehaviour
 
         gameplayUI.SetActive(false);
 
+        CancelarDerrota();
+        derrotaPendiente = StartCoroutine(MostrarDerrotaAnimada());
+    }
+
+    System.Collections.IEnumerator MostrarDerrotaAnimada()
+    {
+        yield return new WaitForSecondsRealtime(0.45f);
+        player.SetActive(false);
+        EliminarObstaculos();
         UIManager.ShowWindow(derrotaID);
+        derrotaPendiente = null;
     }
 
     void EliminarObstaculos()

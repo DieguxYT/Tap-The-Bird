@@ -113,6 +113,7 @@ public class Player : MonoBehaviour
 
         estaVivo = false;
         estaPresionando = false;
+        GetComponent<BirdVisual>()?.Die();
 
         rb.linearVelocity = Vector2.zero;
         rb.simulated = false;
