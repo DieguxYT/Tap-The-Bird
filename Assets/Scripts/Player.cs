@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (!estaVivo) return;
+        if (!estaVivo || GameManager.Instance == null || !GameManager.Instance.PartidaActiva) return;
 
         if (estaPresionando)
         {
@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
     {
         if (!estaVivo) return;
 
-        estaPresionando = presionado;
+        estaPresionando = presionado && GameManager.Instance != null && GameManager.Instance.PartidaActiva;
 
         if (presionado && SonidosJuego.Instance != null)
         {

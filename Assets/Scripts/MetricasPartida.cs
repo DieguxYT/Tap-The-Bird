@@ -37,7 +37,7 @@ public class MetricasPartida : MonoBehaviour
         if (metros != metrosMostrados)
         {
             metrosMostrados = metros;
-            if (textoDistancia != null) textoDistancia.text = $"Distancia: {metros} m";
+            if (textoDistancia != null) textoDistancia.text = $"{metros} m";
         }
     }
 
@@ -68,8 +68,8 @@ public class MetricasPartida : MonoBehaviour
 
     public void ActualizarTextos()
     {
-        if (textoMonedas != null) textoMonedas.text = $"Monedas: {Monedas}";
-        if (textoDistancia != null) textoDistancia.text = $"Distancia: {Mathf.FloorToInt(Distancia)} m";
+        if (textoMonedas != null) textoMonedas.text = Monedas.ToString();
+        if (textoDistancia != null) textoDistancia.text = $"{Mathf.FloorToInt(Distancia)} m";
         if (textoTotalMonedas != null) textoTotalMonedas.text = $"Monedas acumuladas: {TotalMonedas}";
         if (textoResumenDerrota != null)
             textoResumenDerrota.text = $"Distancia: {Mathf.FloorToInt(Distancia)} m\nRécord de distancia: {Mathf.FloorToInt(RecordDistancia)} m\nMonedas de la partida: {Monedas}";

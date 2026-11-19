@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         Time.timeScale = 1f;
+        Application.targetFrameRate = 60;
     }
 
     void Start()
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void MostrarMenu()
     {
+        InputManager.Instance?.ReleaseTap();
         CancelarDerrota();
         PartidaActiva = false;
         MetricasPartida.Instance?.Guardar();
@@ -70,6 +72,8 @@ public class GameManager : MonoBehaviour
 
     public void Pausar()
     {
+        if (!PartidaActiva) return;
+        InputManager.Instance?.ReleaseTap();
         PartidaActiva = false;
         MetricasPartida.Instance?.Guardar();
         Time.timeScale = 0f;
@@ -85,6 +89,7 @@ public class GameManager : MonoBehaviour
 
     public void ReiniciarPartida()
     {
+        InputManager.Instance?.ReleaseTap();
         CancelarDerrota();
         PartidaActiva = false;
         MetricasPartida.Instance?.ReiniciarPartida();
@@ -119,6 +124,7 @@ public class GameManager : MonoBehaviour
 
     public void Perder()
     {
+        InputManager.Instance?.ReleaseTap();
         PartidaActiva = false;
         MetricasPartida.Instance?.Guardar();
         MetricasPartida.Instance?.ActualizarTextos();
@@ -159,6 +165,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(obstaculo.gameObject);
         }
+    }
+
+    void OnApplicationPause(bool paused)
+    {
+        if (paused && PartidaActiva) Pausar();
     }
 
     void OcultarPantallas()

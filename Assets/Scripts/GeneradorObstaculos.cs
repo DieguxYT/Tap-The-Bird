@@ -48,9 +48,13 @@ public class GeneradorObstaculos : MonoBehaviour
     void GenerarObstaculo()
     {
         float posicionY = Random.Range(minimoY, maximoY);
+        Camera vista = Camera.main;
+        float origenX = posicionX;
+        if (vista != null)
+            origenX = Mathf.Max(posicionX, vista.transform.position.x + vista.orthographicSize * vista.aspect + 1.5f);
 
         Vector3 posicion = new Vector3(
-            posicionX,
+            origenX,
             posicionY,
             0f
         );
@@ -90,7 +94,10 @@ public class GeneradorObstaculos : MonoBehaviour
                 float arriba = camara.ViewportToWorldPoint(new Vector3(0.5f, 1f, profundidad)).y - 1.3f;
                 if (arriba > abajo) altura = Mathf.Clamp(altura, abajo, arriba);
             }
-            Vector3 lugar = new Vector3(posicionX + VelocidadActual * tiempoGeneracion * 0.5f, altura, 0f);
+            Vector3 lugar = new Vector3(origenX + VelocidadActual * tiempoGeneracion * 0.5f, altura, 0f);
+            // Keep a player-sized approach zone clear, not just the coin's small trigger.
+            foreach (Collider2D nearby in Physics2D.OverlapCircleAll(lugar, 1.35f))
+                if (nearby.GetComponent<Obstaculo>() != null) return;
             Moneda moneda = Instantiate(monedaPrefab, lugar, Quaternion.identity);
             moneda.velocidad = VelocidadActual;
         }

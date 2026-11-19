@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 63ee7b54002c8944d8aeaf987e9109ee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5171496669651368132
+    second: SkylineNear_0
+  - first:
+      213: -6136066242314427840
+    second: SkylineNear_1
+  - first:
+      213: -1176890067612822424
+    second: SkylineNear_2
+  - first:
+      213: 7071258935882989037
+    second: SkylineNear_3
+  - first:
+      213: -6038402158305515182
+    second: SkylineNear_4
+  - first:
+      213: 8509110764544699909
+    second: SkylineNear_5
+  - first:
+      213: 4343939476879833541
+    second: SkylineNear_6
+  - first:
+      213: 1531827534095432667
+    second: SkylineNear_7
+  - first:
+      213: -9166640440198924820
+    second: SkylineNear_8
+  - first:
+      213: 4945598424338475548
+    second: SkylineNear_9
+  - first:
+      213: -8503930660358340810
+    second: SkylineNear_10
+  - first:
+      213: 979342908178938900
+    second: SkylineNear_11
+  - first:
+      213: -6639177601103152715
+    second: SkylineNear_12
+  - first:
+      213: -1632371033956512123
+    second: SkylineNear_13
+  - first:
+      213: -1109766568273475196
+    second: SkylineNear_14
+  - first:
+      213: -4651715101123112964
+    second: SkylineNear_15
+  - first:
+      213: -7061109473934521667
+    second: SkylineNear_16
+  - first:
+      213: -4934803438102273795
+    second: SkylineNear_17
+  - first:
+      213: 5922463474766108293
+    second: SkylineNear_18
+  - first:
+      213: -5483012790093096692
+    second: SkylineNear_19
+  - first:
+      213: -4825829280759001021
+    second: SkylineNear_20
+  - first:
+      213: -7627233019002075495
+    second: SkylineNear_21
+  - first:
+      213: 6425538088975254255
+    second: SkylineNear_22
+  - first:
+      213: 8848488824858630886
+    second: SkylineNear_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkylineNear_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 439
+        width: 691
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c378050cd272b38b0800000000000000
+      internalID: -5171496669651368132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_1
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 519
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042259c434058daa0800000000000000
+      internalID: -6136066242314427840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_2
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 511
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864904c08b8daafe0800000000000000
+      internalID: -1176890067612822424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_3
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 511
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedbc1c7988222260800000000000000
+      internalID: 7071258935882989037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_4
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 518
+        width: 310
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2596f37da39433ca0800000000000000
+      internalID: -6038402158305515182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_5
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 439
+        width: 35
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ea32b382f661670800000000000000
+      internalID: 8509110764544699909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 511
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9f73560f5c84c30800000000000000
+      internalID: 4343939476879833541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_7
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 517
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbbbeab605224510800000000000000
+      internalID: 1531827534095432667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_8
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 437
+        width: 472
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5763a261d89c080800000000000000
+      internalID: -9166640440198924820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_9
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 545
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a2d64609b42a440800000000000000
+      internalID: 4945598424338475548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_10
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 505
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fb9c2ce18fbf980800000000000000
+      internalID: -8503930660358340810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_11
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 513
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41cbd4baf23579d00800000000000000
+      internalID: 979342908178938900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_12
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 510
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9348dc527ecd3a0800000000000000
+      internalID: -6639177601103152715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 497
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e826b7137a859e0800000000000000
+      internalID: -1632371033956512123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_14
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 493
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489847a9f215990f0800000000000000
+      internalID: -1109766568273475196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_15
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 479
+        width: 55
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff8c39e2c9c17fb0800000000000000
+      internalID: -4651715101123112964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_16
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 499
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbaccf54856e10e90800000000000000
+      internalID: -7061109473934521667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_17
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 471
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0a9833b6e048bb0800000000000000
+      internalID: -4934803438102273795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_18
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 465
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586d8a8d621d03250800000000000000
+      internalID: 5922463474766108293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_19
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 447
+        width: 85
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09d39beaec68e3b0800000000000000
+      internalID: -5483012790093096692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_20
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 479
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3405ea566d5370db0800000000000000
+      internalID: -4825829280759001021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_21
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 447
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9964043eaff962690800000000000000
+      internalID: -7627233019002075495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 463
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2cc1419d81c2950800000000000000
+      internalID: 6425538088975254255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkylineNear_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea56b474b52cca70800000000000000
+      internalID: 8848488824858630886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SkylineNear_0: -5171496669651368132
+      SkylineNear_1: -6136066242314427840
+      SkylineNear_10: -8503930660358340810
+      SkylineNear_11: 979342908178938900
+      SkylineNear_12: -6639177601103152715
+      SkylineNear_13: -1632371033956512123
+      SkylineNear_14: -1109766568273475196
+      SkylineNear_15: -4651715101123112964
+      SkylineNear_16: -7061109473934521667
+      SkylineNear_17: -4934803438102273795
+      SkylineNear_18: 5922463474766108293
+      SkylineNear_19: -5483012790093096692
+      SkylineNear_2: -1176890067612822424
+      SkylineNear_20: -4825829280759001021
+      SkylineNear_21: -7627233019002075495
+      SkylineNear_22: 6425538088975254255
+      SkylineNear_23: 8848488824858630886
+      SkylineNear_3: 7071258935882989037
+      SkylineNear_4: -6038402158305515182
+      SkylineNear_5: 8509110764544699909
+      SkylineNear_6: 4343939476879833541
+      SkylineNear_7: 1531827534095432667
+      SkylineNear_8: -9166640440198924820
+      SkylineNear_9: 4945598424338475548
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

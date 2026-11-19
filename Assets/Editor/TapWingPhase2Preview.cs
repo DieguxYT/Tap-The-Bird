@@ -35,6 +35,7 @@ public static class TapWingPhase2Preview
         target.Create();
         camera.targetTexture = target;
         camera.aspect = (float)size.x / size.y;
+        Object.FindAnyObjectByType<CityParallax>()?.Arrange();
         foreach (var canvas in Object.FindObjectsByType<Canvas>(FindObjectsInactive.Include))
         {
             if (!canvas.isRootCanvas) continue;
@@ -43,12 +44,15 @@ public static class TapWingPhase2Preview
             canvas.planeDistance = 1;
         }
         Canvas.ForceUpdateCanvases();
+        foreach (var panel in Object.FindObjectsByType<AdaptivePanel>()) panel.Refresh();
+        Canvas.ForceUpdateCanvases();
         camera.Render();
         RenderTexture.active = target;
         var image = new Texture2D(size.x, size.y, TextureFormat.RGB24, false);
         image.ReadPixels(new Rect(0, 0, size.x, size.y), 0, 0);
         image.Apply();
         File.WriteAllBytes($"../TapWing-Backups/Reports/{name}-{size.x}x{size.y}.png", image.EncodeToPNG());
+        File.WriteAllBytes($"../TapWing-Backups/Reports/{name}-{size.x}x{size.y}.jpg", image.EncodeToJPG(85));
         camera.targetTexture = null;
         RenderTexture.active = null;
         Object.DestroyImmediate(image);

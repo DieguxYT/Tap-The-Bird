@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -100,17 +101,36 @@ public class InputManager : MonoBehaviour
     {
         if (context.started)
         {
+            if (GameManager.Instance == null || !GameManager.Instance.PartidaActiva || PointerOverControl()) return;
             _isTouching = true;
             OnTapEvent?.Invoke(true);
-            Debug.Log("Touch started");
         }
         else if (context.canceled)
         {
             OnTapEvent?.Invoke(false);
             _isTouching = false;
-            Debug.Log("Touch ended");
         }
     }
+
+    readonly List<RaycastResult> uiHits = new List<RaycastResult>();
+    bool PointerOverControl()
+    {
+        if (EventSystem.current == null || Pointer.current == null) return false;
+        var data = new PointerEventData(EventSystem.current) { position = Pointer.current.position.ReadValue() };
+        uiHits.Clear();
+        EventSystem.current.RaycastAll(data, uiHits);
+        foreach (var hit in uiHits)
+            if (hit.gameObject.GetComponentInParent<UnityEngine.UI.Selectable>() != null) return true;
+        return false;
+    }
+
+    public void ReleaseTap()
+    {
+        _isTouching = false;
+        _isDragging = false;
+        OnTapEvent?.Invoke(false);
+    }
+    void OnApplicationFocus(bool focused) { if (!focused) ReleaseTap(); }
 
     #endregion
 

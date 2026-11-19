@@ -22,6 +22,14 @@ public class UIWindow : MonoBehaviour
     public CanvasGroup CanvasGroup => _canvasGroup;
     public RectTransform CanvasRectTransform => _canvasRectTransform;
     public string Id => _id;
+    private bool initialized;
+
+    void EnsureInitialized()
+    {
+        if (initialized || !Application.isPlaying) return;
+        initialized = true;
+        Initialize();
+    }
 
     public virtual void Initialize()
     {
@@ -33,26 +41,33 @@ public class UIWindow : MonoBehaviour
 
     void Start()
     {
-        Initialize();
+        EnsureInitialized();
     }
 
     public virtual void Show(bool instant = false)
     {
+        EnsureInitialized();
         RectTransform rectTransform =
             _canvasGroup.GetComponent<RectTransform>();
 
         // Detener animaciones anteriores
         rectTransform.DOKill();
+        _canvasGroup.DOKill();
+        _canvasGroup.interactable = true;
+        _canvasGroup.blocksRaycasts = true;
 
         _canvasRectTransform.gameObject.SetActive(true);
 
         if (instant)
         {
             rectTransform.localScale = Vector3.one;
+            _canvasGroup.alpha = 1;
         }
         else
         {
-            rectTransform.localScale = Vector3.zero;
+            rectTransform.localScale = Vector3.one * 0.94f;
+            _canvasGroup.alpha = 0;
+            _canvasGroup.DOFade(1, showDuration * 0.6f).SetUpdate(true);
 
             rectTransform.DOScale(Vector3.one, showDuration)
                 .SetEase(showEase)
@@ -67,6 +82,9 @@ public class UIWindow : MonoBehaviour
 
         // Detener animaciones anteriores
         rectTransform.DOKill();
+        _canvasGroup.DOKill();
+        _canvasGroup.interactable = false;
+        _canvasGroup.blocksRaycasts = false;
 
         if (instant)
         {
@@ -74,7 +92,8 @@ public class UIWindow : MonoBehaviour
         }
         else
         {
-            rectTransform.DOScale(Vector3.zero, hideDuration)
+            _canvasGroup.DOFade(0, hideDuration).SetUpdate(true);
+            rectTransform.DOScale(Vector3.one * 0.94f, hideDuration)
                 .SetEase(hideEase)
                 .SetUpdate(true)
                 .OnComplete(() =>

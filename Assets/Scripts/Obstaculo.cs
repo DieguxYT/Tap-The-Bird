@@ -56,7 +56,8 @@ public class Obstaculo : MonoBehaviour
         }
 
         // Eliminar obstaculos fuera de pantalla
-        if (transform.position.x < -12f)
+        float limite = Camera.main != null ? Camera.main.transform.position.x - Camera.main.orthographicSize * Camera.main.aspect - 2f : -12f;
+        if (transform.position.x < limite)
         {
             Destroy(gameObject);
         }

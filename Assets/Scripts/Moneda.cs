@@ -9,11 +9,14 @@ public class Moneda : MonoBehaviour
     private bool recogida;
     private Camera camara;
     private SpriteRenderer visual;
+    public SpriteRenderer artwork;
+    public ParticleSystem pickupEffect;
+    public bool Recogida => recogida;
 
     void Awake()
     {
         camara = Camera.main;
-        visual = GetComponent<SpriteRenderer>();
+        visual = artwork != null ? artwork : GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -38,6 +41,7 @@ public class Moneda : MonoBehaviour
         recogida = true;
         GetComponent<CircleCollider2D>().enabled = false;
         MetricasPartida.Instance.RecogerMoneda();
+        if (pickupEffect != null) Instantiate(pickupEffect, transform.position, Quaternion.identity);
         if (AudioManager.Instance != null) AudioManager.Instance.PlaySound("Moneda");
         transform.DOMoveY(transform.position.y + 0.7f, 0.25f).SetUpdate(true);
         transform.DOScale(transform.localScale * 1.6f, 0.25f).SetUpdate(true);

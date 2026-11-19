@@ -10,6 +10,7 @@ public class Puntuacion : MonoBehaviour
     public TMP_Text textoPuntos;
     public TMP_Text textoPuntosDerrota;
     public TMP_Text textoRecord;
+    public TMP_Text textoRecordMenu;
 
     private int puntos = 0;
     private int record = 0;
@@ -63,13 +64,14 @@ public class Puntuacion : MonoBehaviour
     public void ActualizarTextos()
     {
         if (textoPuntos != null)
-            textoPuntos.text = "Puntos: " + puntos;
+            textoPuntos.text = puntos.ToString();
 
         if (textoPuntosDerrota != null)
-            textoPuntosDerrota.text = "Puntuacion: " + puntos;
+            textoPuntosDerrota.text = "Puntos: " + puntos;
 
         if (textoRecord != null)
-            textoRecord.text = "Record: " + record;
+            textoRecord.text = "Récord: " + record;
+        if (textoRecordMenu != null) textoRecordMenu.text = record.ToString();
     }
 }
 
