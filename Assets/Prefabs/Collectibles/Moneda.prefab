@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Moneda
   velocidad: 3
   artwork: {fileID: 1449977993983402705}
-  pickupEffect: {fileID: 0}
+  pickupEffect: {fileID: 2399603694570388524, guid: 68a0961e05d1fc948b378c2b663da1b7, type: 3}
 --- !u!114 &5534918079919549348
 MonoBehaviour:
   m_ObjectHideFlags: 0

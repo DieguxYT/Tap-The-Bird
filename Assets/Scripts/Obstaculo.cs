@@ -26,6 +26,7 @@ public class Obstaculo : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance == null || !GameManager.Instance.PartidaActiva) return;
         // Movimiento del obstaculo
         transform.Translate(
             Vector2.left * velocidad * Time.deltaTime

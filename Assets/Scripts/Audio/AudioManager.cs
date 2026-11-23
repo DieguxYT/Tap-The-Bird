@@ -90,10 +90,13 @@ namespace Dino.Utility.Audio
 
         private void Initialize()
         {
+            if (_soundsContainer != null) return;
             _soundsContainer = new GameObject("SoundsContainer");
             _audioSources = new List<AudioSource>();
             _soundsContainer.transform.SetParent(transform);
             PrepareLists();
+            UpdateAudioMixerGroupVolume(PlayerPrefs.GetFloat("VolumenMusica", 1f), AudioType.Music);
+            UpdateAudioMixerGroupVolume(PlayerPrefs.GetFloat("VolumenEfectos", 1f), AudioType.SFX);
         }
 
 
@@ -136,6 +139,7 @@ namespace Dino.Utility.Audio
 
         public void PlaySound(string soundName)
         {
+            Initialize();
             AudioData audioData = _audioManagerData.audioData.Find(x => x.name == soundName);
             if (audioData == null)
             {
@@ -149,13 +153,14 @@ namespace Dino.Utility.Audio
             {
                 GameObject go = new GameObject("AS : " + audioData.name);
                 audioSource = go.AddComponent<AudioSource>();
+                audioSource.playOnAwake = false;
                 audioSource.transform.SetParent(_soundsContainer.transform);
                 audioSource.clip = audioData.clip;
                 audioSource.loop = audioData.loop;
                 audioSource.volume = audioData.volume;
                 audioSource.pitch = audioData.pitch;
-                audioSource.Play();
                 SetAudioInMixerGroup(audioSource, audioData.audioType);
+                audioSource.Play();
                 _audioSources.Add(audioSource);
             }
             else
@@ -182,18 +187,19 @@ namespace Dino.Utility.Audio
 
         public void UpdateAudioMixerGroupVolume(float value, AudioType audioType)
         {
-            float volume = value;
+            // The slider controls linear amplitude; unity gain is 0 dB, never +20 dB.
+            float volume = 20f * Mathf.Log10(Mathf.Clamp(value, 0.0001f, 1f));
 
             switch (audioType)
             {
                 case AudioType.Music:
-                    _audioManagerData.MusicAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.MusicVolumeParameterName, Mathf.Lerp(-80f, 20f, volume));
+                    _audioManagerData.MusicAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.MusicVolumeParameterName, volume);
                     break;
                 case AudioType.SFX:
-                    _audioManagerData.SfxAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.SfxVolumeParameterName, Mathf.Lerp(-80f, 20f, volume));
+                    _audioManagerData.SfxAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.SfxVolumeParameterName, volume);
                     break;
                 case AudioType.Ambience:
-                    _audioManagerData.AmbienceAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.AmbienceVolumeParameterName, Mathf.Lerp(-80f, 20f, volume));
+                    _audioManagerData.AmbienceAudioMixerGroup.audioMixer.SetFloat(_audioManagerData.AmbienceVolumeParameterName, volume);
                     break;
 
             }

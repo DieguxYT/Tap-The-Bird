@@ -11,9 +11,13 @@ public class SettingsUI : UIWindow
     [Header("Sliders de volumen")]
     [SerializeField] private Slider _volumeSlider;
     [SerializeField] private Slider _sfxSlider;
+    private Slider vibrationSlider;
+    private bool settingsInitialized;
 
     public override void Initialize()
     {
+        if (settingsInitialized) return;
+        settingsInitialized = true;
         base.Initialize();
 
         float musica = PlayerPrefs.GetFloat(
@@ -44,8 +48,27 @@ public class SettingsUI : UIWindow
                 CambiarEfectos);
         }
 
+        // Reuse the existing third control, including when its canvas is hidden.
+        foreach (Slider slider in GetComponentsInChildren<Slider>(true))
+        {
+            if (slider == _volumeSlider || slider == _sfxSlider) continue;
+            vibrationSlider = slider;
+            vibrationSlider.minValue = 0f;
+            vibrationSlider.maxValue = 1f;
+            vibrationSlider.wholeNumbers = true;
+            vibrationSlider.SetValueWithoutNotify(PlayerPrefs.GetInt("Vibracion", 1));
+            vibrationSlider.onValueChanged.AddListener(CambiarVibracion);
+            break;
+        }
+
         CambiarMusica(musica);
         CambiarEfectos(efectos);
+    }
+
+    private void CambiarVibracion(float valor)
+    {
+        PlayerPrefs.SetInt("Vibracion", valor >= 0.5f ? 1 : 0);
+        PlayerPrefs.Save();
     }
 
     private void CambiarMusica(float valor)

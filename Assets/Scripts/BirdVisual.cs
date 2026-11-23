@@ -6,6 +6,7 @@ public class BirdVisual : MonoBehaviour
 {
     public SpriteRenderer sprite;
     public Animator animator;
+    public ParticleSystem deathEffect;
     private Rigidbody2D body;
     private Player player;
 
@@ -31,6 +32,10 @@ public class BirdVisual : MonoBehaviour
     }
     public void Die()
     {
+        if (deathEffect != null) Instantiate(deathEffect, transform.position, Quaternion.identity);
+#if UNITY_ANDROID && !UNITY_EDITOR
+        if (PlayerPrefs.GetInt("Vibracion", 1) != 0) Handheld.Vibrate();
+#endif
         if (sprite == null || animator == null) return;
         animator.updateMode = AnimatorUpdateMode.UnscaledTime;
         animator.SetBool("Dead", true);
