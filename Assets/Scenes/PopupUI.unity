@@ -238,7 +238,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 63ee7b54002c8944d8aeaf987e9109ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -256,7 +256,7 @@ Transform:
   m_GameObject: {fileID: 33428821}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.810043, y: 0, z: 0}
+  m_LocalPosition: {x: 22.59, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -905,7 +905,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -918,12 +918,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 34
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1074,12 +1074,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 20
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1275,7 +1275,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 63ee7b54002c8944d8aeaf987e9109ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -1293,7 +1293,7 @@ Transform:
   m_GameObject: {fileID: 269967287}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.930042, y: 0, z: 0}
+  m_LocalPosition: {x: 52.71, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1500,7 +1500,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1513,12 +1513,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 27
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1706,7 +1706,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 3de1189b6b8a1fb4e823ea54d73c34a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -1724,7 +1724,7 @@ Transform:
   m_GameObject: {fileID: 342957656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.129997, y: 0, z: 0}
+  m_LocalPosition: {x: 22.59, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1798,7 +1798,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 3de1189b6b8a1fb4e823ea54d73c34a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -1816,7 +1816,7 @@ Transform:
   m_GameObject: {fileID: 347188509}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.19, y: 0, z: 0}
+  m_LocalPosition: {x: 37.649998, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2506,7 +2506,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2519,12 +2519,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 20
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2663,7 +2663,7 @@ Transform:
   m_GameObject: {fileID: 760423807}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4199915, y: 0, z: 0}
+  m_LocalPosition: {x: 7.5299997, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2975,7 +2975,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2993,7 +2993,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 42
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3436,7 +3436,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 3de1189b6b8a1fb4e823ea54d73c34a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -3454,7 +3454,7 @@ Transform:
   m_GameObject: {fileID: 1047269667}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.31, y: 0, z: 0}
+  m_LocalPosition: {x: 67.77, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3655,7 +3655,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3668,12 +3668,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 24
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3793,7 +3793,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3811,7 +3811,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 42
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4120,7 +4120,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 3de1189b6b8a1fb4e823ea54d73c34a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -4138,7 +4138,7 @@ Transform:
   m_GameObject: {fileID: 1246421244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0699987, y: 0, z: 0}
+  m_LocalPosition: {x: 7.5299997, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4316,7 +4316,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 63ee7b54002c8944d8aeaf987e9109ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -4334,7 +4334,7 @@ Transform:
   m_GameObject: {fileID: 1255331008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 74.99004, y: 0, z: 0}
+  m_LocalPosition: {x: 67.77, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4426,7 +4426,7 @@ Transform:
   m_GameObject: {fileID: 1267365232}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.53999, y: 0, z: 0}
+  m_LocalPosition: {x: 37.649998, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4613,7 +4613,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 3de1189b6b8a1fb4e823ea54d73c34a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -4631,7 +4631,7 @@ Transform:
   m_GameObject: {fileID: 1276831365}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25.05, y: 0, z: 0}
+  m_LocalPosition: {x: -22.59, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4723,7 +4723,7 @@ Transform:
   m_GameObject: {fileID: 1305867628}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.59999, y: 0, z: 0}
+  m_LocalPosition: {x: 52.71, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4877,7 +4877,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 63ee7b54002c8944d8aeaf987e9109ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -4895,7 +4895,7 @@ Transform:
   m_GameObject: {fileID: 1330241826}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.369954, y: 0, z: 0}
+  m_LocalPosition: {x: -22.59, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4987,7 +4987,7 @@ Transform:
   m_GameObject: {fileID: 1339022124}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.640008, y: 0, z: 0}
+  m_LocalPosition: {x: -7.5299997, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5079,7 +5079,7 @@ Transform:
   m_GameObject: {fileID: 1346346058}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.479992, y: 0, z: 0}
+  m_LocalPosition: {x: 22.59, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5171,7 +5171,7 @@ Transform:
   m_GameObject: {fileID: 1350939264}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 62.65999, y: 0, z: 0}
+  m_LocalPosition: {x: 67.77, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5320,7 +5320,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 3de1189b6b8a1fb4e823ea54d73c34a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -5338,7 +5338,7 @@ Transform:
   m_GameObject: {fileID: 1431986294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.990001, y: 0, z: 0}
+  m_LocalPosition: {x: -7.5299997, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5412,7 +5412,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 3de1189b6b8a1fb4e823ea54d73c34a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -5430,7 +5430,7 @@ Transform:
   m_GameObject: {fileID: 1459171013}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.249996, y: 0, z: 0}
+  m_LocalPosition: {x: 52.71, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5571,7 +5571,7 @@ Transform:
   m_GameObject: {fileID: 1475741264}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.700008, y: 0, z: 0}
+  m_LocalPosition: {x: -22.59, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5645,7 +5645,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 63ee7b54002c8944d8aeaf987e9109ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -5663,7 +5663,7 @@ Transform:
   m_GameObject: {fileID: 1565959550}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.750045, y: 0, z: 0}
+  m_LocalPosition: {x: 7.5299997, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5737,7 +5737,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 63ee7b54002c8944d8aeaf987e9109ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -5755,7 +5755,7 @@ Transform:
   m_GameObject: {fileID: 1585234815}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.870045, y: 0, z: 0}
+  m_LocalPosition: {x: 37.649998, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6956,7 +6956,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6974,7 +6974,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 42
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7126,7 +7126,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 63ee7b54002c8944d8aeaf987e9109ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 15.36, y: 10.24}
@@ -7144,7 +7144,7 @@ Transform:
   m_GameObject: {fileID: 1997972356}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.30995464, y: 0, z: 0}
+  m_LocalPosition: {x: -7.5299997, y: 0, z: 0}
   m_LocalScale: {x: 0.98046875, y: 0.98046875, z: 0.98046875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7216,7 +7216,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -7229,12 +7229,12 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 20
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7658,7 +7658,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290973798
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -7676,7 +7676,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 32
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8534,7 +8534,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282911024
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -8552,7 +8552,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
+  m_fontSize: 76
   m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8654,7 +8654,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TapWing
+  m_text: 'Tap The Bird
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 607c784320607404fbc678bd6c7ca6db, type: 2}
   m_sharedMaterial: {fileID: -3852876734540326533, guid: 607c784320607404fbc678bd6c7ca6db, type: 2}
@@ -8663,7 +8665,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290187102
+    rgba: 4286211593
   m_fontColor: {r: 0.035, g: 0.4, b: 0.48, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -8681,7 +8683,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 106.55
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9308,7 +9310,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287169359
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -9326,7 +9328,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 34
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9708,7 +9710,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287370316
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -9726,7 +9728,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 34
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9865,7 +9867,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283106599
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -9883,7 +9885,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
+  m_fontSize: 72
   m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10014,7 +10016,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10244,7 +10246,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294572541
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -10262,7 +10264,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10393,7 +10395,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -10411,7 +10413,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
+  m_fontSize: 76
   m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11630,7 +11632,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -11648,7 +11650,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11722,7 +11724,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288614745
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -11740,7 +11742,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 38
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11941,7 +11943,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -11959,7 +11961,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12169,7 +12171,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -12187,7 +12189,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 66
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12261,7 +12263,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294704127
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -12279,7 +12281,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12389,7 +12391,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -12407,7 +12409,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 46
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12731,7 +12733,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290187102
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -12749,7 +12751,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 56
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12960,7 +12962,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288614745
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -13406,7 +13408,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -13596,7 +13598,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288614745
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -13614,7 +13616,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 30
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14450,7 +14452,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14583,7 +14585,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288614745
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -14601,7 +14603,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 24
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14693,7 +14695,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290187102
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -14711,7 +14713,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 28
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14823,7 +14825,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 40
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15038,7 +15040,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288614745
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -15056,7 +15058,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 38
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15548,7 +15550,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286384441
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -15566,7 +15568,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 34
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15924,7 +15926,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288614745
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -15942,7 +15944,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
+  m_fontSize: 32
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16108,7 +16110,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16240,7 +16242,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283052047
   m_fontColor: {r: 0.06, g: 0.19, b: 0.29, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -16258,7 +16260,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
