@@ -77,10 +77,25 @@ El atlas TextMesh Pro está en `Assets/Fonts/Fredoka/Fredoka-SemiBold SDF.asset`
 
 ## Estado de verificación final
 
-**Pendiente de la ejecución final y de la revisión de capturas.** No interpretar
-las pruebas de fases anteriores como aprobación automática de todos los cambios
-de este rediseño. Los resultados definitivos deben contrastarse con los informes
-generados tras el último cambio.
+**Verificación del 24 de noviembre de 2026:** 23 comprobaciones de métricas y
+monedas y 39 de integración visual/jugable superadas. Se probaron la recogida
+mediante Physics2D, el bloqueo de doble premio, la colisión real con un obstáculo,
+los botones serializados, pausa, derrota, reinicio y guardado/restauración de
+preferencias. No se detectaron errores de ejecución del juego en esos recorridos.
+
+Los scripts del jugador compilados para Windows Standalone también pasaron
+(`TAPWING_PLAYER_SCRIPTS_OK`); esto no sustituye una compilación Android. Unity
+mantiene avisos de APIs antiguas en código existente. En una ejecución apareció
+una excepción interna de `UnityEditor.Search.SearchDatabase`, separada y
+registrada en el informe; no corresponde a un componente del juego.
+
+Se generaron 30 capturas de HUD, menú, pausa, derrota, configuración y créditos
+en 16:9, 20:9, 16:10, 4:3 y 9:16. La captura adicional en Play Mode espera varios
+frames para evitar artefactos de la primera renderización síncrona del editor.
+Se revisaron `runtime-gameplay.jpg` (frame 79) y `runtime-menu.jpg` (frame 122):
+las tres capas de ciudad, el obstáculo urbano y la moneda se muestran correctamente.
+Se corrigieron también las dimensiones de los controles de volumen y vibración.
+`runtime-preview.txt` terminó sin errores de ejecución.
 
 Las herramientas de configuración de `Assets/Editor/TapWingVisualBuild.*` son
 migraciones explícitas. No hace falta ejecutarlas para abrir y jugar la escena
@@ -117,6 +132,7 @@ del ejecutable a la instalación local. Informes y capturas se guardan fuera del
 repositorio, en `../TapWing-Backups/Reports/`: `phase2-tests.txt`,
 `visual-tests.txt`, `android-preparation.txt` y las imágenes de las pantallas.
 La herramienta de capturas es `TapWingPhase2Preview.Run` y admite `-quit`.
+Para capturas en ejecución usar `TapWingRuntimePreview.Run` sin `-quit`.
 Los problemas internos de índice `UnityEditor.Search.SearchDatabase`, si aparecen,
 se registran separados de los errores del juego.
 

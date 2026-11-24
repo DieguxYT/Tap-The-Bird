@@ -7,6 +7,12 @@ using TMPro;
 
 public static partial class TapWingVisualBuild
 {
+    public static void FinalRuntimeCheck()
+    {
+        PolishLayout();
+        TapWingRuntimePreview.Run();
+    }
+
     public static void FinalizeAndPreview()
     {
         FinishVisuals();
@@ -27,9 +33,12 @@ public static partial class TapWingVisualBuild
             if(slider.handleRect!=null)
             {
                 var handle=slider.handleRect;
-                handle.anchorMin=new Vector2(handle.anchorMin.x,.5f);
-                handle.anchorMax=new Vector2(handle.anchorMax.x,.5f);
-                handle.sizeDelta=new Vector2(64,64);
+                var track=(RectTransform)handle.parent;
+                track.anchorMin=new Vector2(0,.5f); track.anchorMax=new Vector2(1,.5f);
+                track.sizeDelta=new Vector2(-64,64); track.anchoredPosition=Vector2.zero;
+                handle.anchorMin=new Vector2(handle.anchorMin.x,0);
+                handle.anchorMax=new Vector2(handle.anchorMax.x,1);
+                handle.sizeDelta=new Vector2(64,0);
             }
         }
         var canvas=gm.gameplayUI.GetComponentInChildren<Canvas>(true);
